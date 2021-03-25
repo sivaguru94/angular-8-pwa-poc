@@ -1,0 +1,51 @@
+<section class="mat-typography">
+    <mat-grid-list class="containerGridList" [cols]=[this.columnNum] rows="2" rowHeight="34em">
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <mat-list>
+                <mat-list-item>
+                    <div class="myColor">
+                        <p class="heading">NEXTGEN</p>
+                    </div>
+                </mat-list-item>
+                <mat-list-item>
+                    <div class="textStyles">
+                        <p class="textStyles">To experience the best tech</p>
+                    </div>
+                </mat-list-item>
+                <mat-list-item>
+                    <div class="textStyles">Support app</div>
+                </mat-list-item>
+                <br>
+                <mat-list-item>
+                    <div>
+                        <button mat-stroked-button color="primary" [ngClass]="'btn'" (click)="onClickLogin()">Login</button>
+                    </div>
+                </mat-list-item>
+                <br>
+                <mat-list-item>
+                    <div class="myColor">
+                        <h2>OR</h2>
+                    </div>
+
+                </mat-list-item>
+                <br>
+                <mat-list-item>
+                    <div class="textStyles">
+                        If you are a new User
+                    </div>
+                </mat-list-item>
+                <br>
+                <mat-list-item>
+                    <div>
+                        <button mat-stroked-button color="primary" [ngClass]="'btn'">Sign Up</button>
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </mat-grid-tile>
+        <!-- <div class="imageElement"> -->
+        <mat-grid-tile *ngIf="mobile" [colspan]="3" [rowspan]="2">
+            <img class="img-responsive | center" crop="scale" src="assets/work.png">
+        </mat-grid-tile>
+        <!-- </div> -->
+    </mat-grid-list>
+</section>
